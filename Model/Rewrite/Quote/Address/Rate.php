@@ -56,7 +56,7 @@ class Rate extends \Magento\Quote\Model\Quote\Address\Rate
             $data
         );
     }
-
+    
     /**
      * @param AbstractResult $rate
      * @return $this|Rate
