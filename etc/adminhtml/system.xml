@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Address" translate="label" sortOrder="10">
+            <label>Address</label>
+        </tab>
+        <section id="Codilar_ShippingAddress" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Address</label>
+            <tab>Address</tab>
+            <resource>Codilar_ShippingAddress::config_shippingAddress</resource>
+
+            <group id="products_settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Enter Some Text</label>
+                <field id="text" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Specific Text in Shipping Address</label>
+                    <comment>Enter the specific text to match in the shipping address.</comment>
+                </field>
+                <field id="extra_shipping_cost" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Extra Shipping Cost</label>
+                    <comment>Enter the additional shipping cost.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
