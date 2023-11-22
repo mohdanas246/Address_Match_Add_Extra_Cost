@@ -91,7 +91,7 @@ class Rate extends \Magento\Quote\Model\Quote\Address\Rate
         if ($isFlatRateMethod && $addressContainsText) {
             $finalPrice += $additionalPrice;
         }
-
+    
         if ($rate instanceof Error) {
             $this->setCode(
                 $rate->getCarrier() . '_error'
